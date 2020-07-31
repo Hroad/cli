@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--<%= htmlWebpackPlugin.options.metadata.headerInfo %> -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>常规项目脚手架使用Demo-H5</title>
+  <meta name="description" content="routine project development scaffold h5 demo"> 
+  <%= htmlWebpackPlugin.files.webpackManifest %>
+  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+  <script type="text/javascript" src="js/ienv-min-1.0.4.js"></script> 
+  <!-- CSS will be injected by webpack here -->
+  <!-- Preload link tags will be injected by webpack here -->  
+</head>
+<body>
+<div id="container" class="container">
+     <section  id="page1" style="background-color: rgb(255, 123, 0);">
+        <p>当前第1页</p>
+     </section>
+     <section  id="page2"  style="background-color: rgb(195, 0, 255);">
+        <p>当前第2页</p>
+    </section>
+</div>
+  <!-- Scripts will be injected by webpack here -->
+  <script type="text/javascript" src="js/zepto.min.js"></script>
+</body>
+</html>

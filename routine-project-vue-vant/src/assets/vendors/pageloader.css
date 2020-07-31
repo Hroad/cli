@@ -1,0 +1,90 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+}
+.loader-spin{
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    z-index: 99999;
+    color: #2a8fe9;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 70px;
+    margin-left: -40px;
+    margin-top: -35px;
+}
+.loader-spin > .tipTxt{
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.loader-spin>.double{
+    width:60px;
+    height:36px;
+    margin:0px auto;
+    position: relative;     
+  }
+  .double .focus{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2a8fe9;
+    position: absolute;
+    left:20px;
+    top: 50%;
+    margin-top: -5px;
+    animation: double_lt_size 1s infinite linear;
+  }
+  .double::before,.double::after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2a8fe9;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+  }
+  .double::before{
+    left:0;
+    animation: double_gt_size 1s infinite linear;
+  }
+  .double::after{
+    left:40px; 
+    animation: double_gt_size 1s infinite linear;
+  }
+  @keyframes bg{
+    0% {background:red}
+    50% {background:yellow}
+    100% {background:red}
+  }
+
+  @keyframes double_lt_size {
+    0% { transform: scale(1) }
+    25% { transform: scale(0.5)  }
+    50% { transform: scale(1) }
+    75% { transform: scale(1.5)  }
+    100% { transform: scale(1) }
+  }
+
+  @keyframes double_gt_size {
+    0% { transform: scale(1) }
+    25% { transform: scale(1.5)  }
+    50% { transform: scale(1) }
+    75% { transform: scale(0.5)  }
+    100% { transform: scale(1) }
+  }
+
+
+
+
+ 

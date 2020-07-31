@@ -1,0 +1,1 @@
+console.log('--当前处于script文件');

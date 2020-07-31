@@ -1,0 +1,27 @@
+{
+    "plugins": [
+            [
+                "transform-runtime",
+                {
+                    "polyfill":false
+                }
+            ],
+            [
+                "import",{
+                    "libraryName": "vant",
+                    "libraryDirectory": "es",
+                    "style": false
+                }
+            ]
+        
+    ],
+    "presets": [
+       [ 
+           "env",
+            {
+                "modules":false
+            }
+        ],
+        "stage-2"  
+    ]    
+}

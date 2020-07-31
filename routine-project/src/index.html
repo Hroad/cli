@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--<%= htmlWebpackPlugin.options.metadata.headerInfo %> -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title></title>
+  <meta name="description" content=""> 
+  <%= htmlWebpackPlugin.files.webpackManifest %>
+  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+  <!-- CSS will be injected by webpack here -->
+  <!-- Preload link tags will be injected by webpack here -->  
+</head>
+<body>
+<div class="container">
+    <div class="testDiv">
+      <p>演示效果</p>
+    </div>
+</div>
+  <!-- Scripts will be injected by webpack here -->
+</body>
+</html>
