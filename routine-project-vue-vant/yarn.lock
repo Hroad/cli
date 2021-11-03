@@ -6172,9 +6172,9 @@ v8-compile-cache@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.0.3.tgz#00f7494d2ae2b688cfe2899df6ed2c54bef91dbe"
 
-validator@^10.11.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
+validator@^13.7.0:
+  version "13.7.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.7.0.tgz#4f9658ba13ba8f3d82ee881d3516489ea85c0857"
 
 vant@2.0.6:
   version "2.0.6"
